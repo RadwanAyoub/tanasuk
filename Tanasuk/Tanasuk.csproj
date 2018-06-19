@@ -45,6 +45,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Sitecore.Kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Libraries\Sitecore.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -89,19 +97,56 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Css\addition.css" />
+    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.svg" />
+    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Css\Difficulty.css" />
+    <Content Include="Css\font-awesome.min.css" />
+    <Content Include="Css\niteflight.min.css" />
+    <Content Include="Css\vendor.min.css" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Business\BreadCrumbBuilder.cs" />
+    <Compile Include="Business\IMedia.cs" />
+    <Compile Include="Business\Navigation.cs" />
+    <Compile Include="Controllers\TanasukController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Image.cs" />
+    <Compile Include="Models\NavigationModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
+    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.eot" />
+    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
+    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.woff" />
+    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
+    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Css\bower_components\font-awesome\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
+    <Content Include="Views\Adv1.cshtml" />
+    <Content Include="Views\Base\Adv1.cshtml" />
+    <Content Include="Views\Base\Banner.cshtml" />
+    <Content Include="Views\Base\BaseContent.cshtml" />
+    <Content Include="Views\Base\BaseContent_.cshtml" />
+    <Content Include="Views\Base\BreadCrumb.cshtml" />
+    <Content Include="Views\Base\Footer.cshtml" />
+    <Content Include="Views\Base\Logo.cshtml" />
+    <Content Include="Views\Base\MainLayout.cshtml" />
+    <Content Include="Views\Base\Top.cshtml" />
+    <Content Include="Views\Content.cshtml" />
+    <Content Include="Views\Product1Service1.cshtml" />
+    <Content Include="Views\Tanasuk\Index.cshtml" />
+    <Content Include="Views\Tanasuk\Navigation.cshtml" />
+    <Content Include="Views\Tanasuk\Side.cshtml" />
+    <Content Include="Views\web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -111,8 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
