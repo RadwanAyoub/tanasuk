@@ -1,0 +1,34 @@
+﻿@using Sitecore.Data.Items
+@using Tanasuk.Business
+@{
+    Item current = Sitecore.Context.Item;
+    BreadCrumbBuilder bread = new BreadCrumbBuilder();
+    var list = bread.Bread(current);
+    list.Reverse();
+    string start = Sitecore.Context.Site.StartPath;
+    string[] home = start.Split(new[] { "/" }, StringSplitOptions.None);
+    string curr = null;
+}
+<nav data-sc-id="RibbonBreadcrumb" class="sc-breadcrumb sc_RibbonBreadcrumb_410 data-sc-registered" data-bind="visible: isVisible" data-sc-require="/-/speak/v1/ribbon/Breadcrumb.js,css!/-/speak/v1/ribbon/Breadcrumb.css" data-sc-hasnested="true" id="breadcrumbContent{62F63A62-2B3A-4121-A9BD-5F6E919B8C4E}" style="background-color: #fff">
+    <div class="sc-breadcrumb-item" title="Go to home">
+        <a id="navigationTreeViewButton" class="sc-breadcrumb-item-button" href="@home[3]">
+            <img alt="" src="/sitecore/shell/~/icon/Office/16x16/elements_tree.png.aspx">
+        </a>
+    </div>
+    @foreach (var tele in list)
+    {
+        if (current.Name == tele.Title)
+        {
+            tele.Active = true;
+            tele.Url = null;
+            curr = "Current";
+        }
+        <div class="sc-breadcrumb-item">
+            <a id="breadcrumbMenuSubcontrol" class="sc-breadcrumb-item-action" title="@tele.Title action">
+                <img src="/sitecore/shell/client/Speak/Assets/img/Speak/Common/16x16/dark_gray/separator.png">
+            </a>
+            <a class="sc-breadcrumb-item-path" href="@tele.Url" title="@(curr != null ? curr : tele.Title) path" @(tele.Active == true ? "style=color:#c8244f;" : string.Empty)>@tele.Title</a>
+        </div>
+    }
+
+</nav>

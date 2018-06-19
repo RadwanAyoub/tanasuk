@@ -1,0 +1,52 @@
+﻿@using Sitecore.Data.Items;
+@model List<Tanasuk.Models.NavigationModel>
+    @{ 
+        Item current = RenderingContext.Current.ContextItem;
+    }
+<style>
+    .vert {
+        width: 100%;
+        font-weight: bold;
+    }
+    .subvert {
+        float: none !important;
+        font-weight: 300;
+        margin-left: 20px;
+    }
+    .navbar-default {
+        margin-top: 15px;
+    }
+</style>
+<div class="sidebar-nav">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+            <ul class="nav navbar-nav" style="background-color: #f8f8f8; min-width:250px;">
+                @foreach (var navItem in Model)
+                {
+                    if (current.Name == navItem.Title)
+                    {
+                        navItem.Active = true;
+                        navItem.Url = null;
+                    }
+                    <li class="vert @(navItem.Active == true ? "active" : string.Empty)">
+                        <a href="@navItem.Url" class="hov">@navItem.Title</a>
+                        @if (navItem.Children.Count > 0)
+                        {
+                        <ul class="nav navbar-nav">
+                            @foreach (var subNav in navItem.Children)
+                            {
+                                if (current.Name == subNav.Title)
+                                {
+                                    subNav.Active = true;
+                                    subNav.Url = null;
+                                }
+                                <li class="subvert @(subNav.Active == true ? "active" : string.Empty)"><a href="@subNav.Url" class="hov">@subNav.Title</a></li>
+                            }
+                        </ul>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

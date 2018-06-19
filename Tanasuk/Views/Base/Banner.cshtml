@@ -1,0 +1,10 @@
+﻿@using Sitecore.Data.Items
+@using Sitecore.Resources.Media
+@model RenderingModel
+@{
+    Item current = Sitecore.Context.Item;
+    Sitecore.Data.Fields.ImageField imi = current.Fields["Banner"];
+    var image = new MediaItem(imi.MediaItem);
+    var Url = MediaManager.GetMediaUrl(image);
+}
+<img src="@Url" class="img-responsive" style="width:100%; margin-top: -20px;height:300px">

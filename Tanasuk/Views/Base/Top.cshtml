@@ -1,0 +1,30 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+<header class="header-static">
+    <nav class="navbar navbar-default navbar-static" id="mainNavbar" style="background-color: #000">
+        <div class="container fluid">
+            <div>
+                @Html.Sitecore().Placeholder("Logo")
+            </div>
+            <div>
+                @Html.Sitecore().Placeholder("Navigation")
+            </div>
+            <div class="navbar-right">
+                <div class="navbar-activity">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="btn dropdown-toggle togg" data-toggle="dropdown" style="float:right;">
+                                <i class="fa fa-globe fa-2x"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li class="active"><a href="#">English</a></li>
+                                <li><a href="#">Deutsch (Deutschland)</a></li>
+                                <li><a href="#">日本語 (日本)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

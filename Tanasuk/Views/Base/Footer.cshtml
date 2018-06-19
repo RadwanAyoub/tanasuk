@@ -1,0 +1,6 @@
+﻿@using Sitecore.Mvc
+@{
+    var dataSourceId = RenderingContext.CurrentOrNull.Rendering.DataSource;
+    var dataSource = Sitecore.Context.Database.GetItem(dataSourceId);
+}
+<p>&copy; @dataSource.Fields["CopyRights"].Value</p>
