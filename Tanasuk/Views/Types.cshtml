@@ -1,0 +1,9 @@
+﻿<div class="col-sm-9" style="width:800px;">
+    <h1>@Html.Sitecore().Field(Tanasuk.Items.Base.Fields.Title_FieldName) - Type </h1>
+    <div id="Translation">
+        @Html.Sitecore().Field(Tanasuk.Items.InnerPage.Fields.Thumbnail_FieldName, new { @class = "img-responsive" })
+        <p>@Html.Sitecore().Field(Tanasuk.Items.Base.Fields.Description_FieldName)</p>
+        @Html.Sitecore().BeginField(Tanasuk.Items.InnerPage.Fields.Link_FieldName, new { @class = "btn btn-primary", haschildren = false })
+        @Html.Sitecore().EndField()
+    </div>
+</div>

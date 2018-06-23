@@ -1,11 +1,7 @@
-﻿@using Sitecore.Mvc.Presentation
-@using Tanasuk.Models
-@using Sitecore.Resources.Media
-@using Sitecore.Data.Items
-@{
-    var dataSourceId = RenderingContext.CurrentOrNull.Rendering.DataSource;
-    Item item = Sitecore.Context.Database.GetItem(dataSourceId);
-    Sitecore.Data.Fields.ImageField imgField = ((Sitecore.Data.Fields.ImageField)item.Fields["Logo"]);
-    string url = Sitecore.Resources.Media.MediaManager.GetMediaUrl(imgField.MediaItem);
-}
-<a class="navbar-brand" href="/"><img style="max-width:100px; margin-top: -7px;max-height:40px; margin-top: 7px;" src="@url"></a>
+﻿<a class="navbar-brand" href="@Sitecore.Links.LinkManager.GetItemUrl(Sitecore.Context.Database.GetItem(Tanasuk.Items.HomePage.TemplateID))">
+    @Html.Sitecore().Field("Logo",Sitecore.Context.Database.GetItem(Tanasuk.Items.HomePage.TemplateID),new {@style= "margin-top:-10px", mw=100, mh=40 })
+</a>
+@*@Html.Sitecore().BeginField("Link")
+    testgfghdfghdsf
+        @Html.Sitecore().Field("Logo")
+    @Html.Sitecore().EndField()*@

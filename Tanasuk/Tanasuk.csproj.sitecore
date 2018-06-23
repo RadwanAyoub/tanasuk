@@ -2,16 +2,16 @@
   <PropertyGroup>
     <Site Server="Tanasuk" UserName="sitecore\admin" IsRemoteSitecore="False" />
   </PropertyGroup>
-  <File Include="Views\Base\Top.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+  <File Include="Views\Base\Header.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{3A5A6638-40B4-4F5F-8A3A-A0060138BAF5}</Item>
   </File>
   <File Include="Views\Base\Logo.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{F15BF5F0-EFF8-4446-9D2F-DAF2725284DA}</Item>
   </File>
-  <File Include="Views\Base\BaseContent.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+  <File Include="Views\Base\TwoColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{07F330F3-FC24-4CA8-87C8-67575820958F}</Item>
   </File>
-  <File Include="Views\Base\BaseContent_.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+  <File Include="Views\Base\OneColumn.cshtml" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
     <Item DatabaseName="master">{AD580A01-2704-4CDD-AA15-E419125D6145}</Item>
   </File>
 </Project>

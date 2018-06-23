@@ -9,41 +9,45 @@ namespace Tanasuk.Business
 {
     public class Navigation
     {
-        public List<NavigationModel> Navi()
+        public List<NavigationModel> GetHeaderNavigation()
         {
             var dataSourceId = RenderingContext.CurrentOrNull.Rendering.DataSource;
             var dataSource = Sitecore.Context.Database.GetItem(dataSourceId);
-            var list = dataSource.GetChildren().Where(o=> is_navigation(o));
+            var list = dataSource.GetChildren();
             List<NavigationModel> NavItems = new List<NavigationModel>();
-            List<NavigationModel> children = new List<NavigationModel>();
-            foreach (Item riz in list)
+            foreach (Item item in list)
             {
-                if (riz.HasChildren)
-                {
-                    children = GetChill(riz);
-                }
-                var title = riz.Fields["Title"].Value;
-                Sitecore.Data.Fields.LinkField linkfield = riz.Fields["Destination"];
-                var url = linkfield.GetFriendlyUrl();
-                NavItems.Add(new NavigationModel { Title = title, Url = url, Children = children });
+                NavItems.Add(new NavigationModel { Name = item });
             }
-
             return NavItems;
         }
-        private List<NavigationModel> GetChill(Item item)
+        public List<NavigationModel> GetSideNavigation()
+        {
+            var dataSourceId = RenderingContext.CurrentOrNull.Rendering.DataSource;
+            var dataSource = Sitecore.Context.Database.GetItem(dataSourceId);
+            var list = dataSource.GetChildren()/*.Where(o=> Is_Included(o))*/;
+            List<NavigationModel> NavItems = new List<NavigationModel>();
+            List<NavigationModel> children = new List<NavigationModel>();
+            foreach (Item item in list)
+            {
+                if (item.HasChildren)
+                {
+                    children = GetChilldren(item);
+                }
+                NavItems.Add(new NavigationModel { Name = item, Children = children });
+            }
+            return NavItems;
+        }
+        private List<NavigationModel> GetChilldren(Item item)
         {
             List<NavigationModel> Chill = new List<NavigationModel>();
-            foreach (Item riz in item.Children)
+            foreach (Item child in item.Children)
             {
-                var title = riz.Fields["Title"].Value;
-                Sitecore.Data.Fields.LinkField linkfield = riz.Fields["Destination"];
-                var url = linkfield.GetFriendlyUrl();
-                Chill.Add(new NavigationModel { Title = title, Url = url });
+                Chill.Add(new NavigationModel { Name = child });
             }
             return Chill;
         }
-
-        private bool is_navigation(Item currentitem)
+        private bool Is_Included(Item currentitem)
         {
             Sitecore.Data.Fields.LinkField link = currentitem.Fields["Destination"];
             var item = Sitecore.Context.Database.GetItem(link.TargetID);

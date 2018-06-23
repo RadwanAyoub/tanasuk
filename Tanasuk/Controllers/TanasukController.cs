@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Tanasuk.Models;
+﻿using System.Web.Mvc;
 using Tanasuk.Business;
 
 namespace Tanasuk.Controllers
@@ -15,19 +10,15 @@ namespace Tanasuk.Controllers
         {
             return View();
         }
-        public ActionResult Navigation()
+        public ActionResult HeaderNavigation()
         {
             Navigation _nav = new Navigation();
-            return View(_nav.Navi());
+            return View(_nav.GetHeaderNavigation());
         }
-        public ActionResult Side()
+        public ActionResult SideNavigation()
         {
             Navigation _nav = new Navigation();
-            return View(_nav.Navi());
-        }
-        public ActionResult Adv()
-        {
-            return View(IMedia.Source());
+            return View(_nav.GetSideNavigation());
         }
     }
 }

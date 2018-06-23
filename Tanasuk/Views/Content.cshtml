@@ -1,8 +1,4 @@
 ﻿@using Sitecore.Mvc
 @using Sitecore.Mvc.Presentation
-@model RenderingModel
-@{
-
-}
-<h1>@Html.Sitecore().Field("Title")</h1>
-<p>@Html.Sitecore().Field("Description")</p>
+<h1>@Html.Sitecore().Field(Tanasuk.Items.Base.Fields.Title_FieldName)</h1>
+<p>@Html.Sitecore().Field(Tanasuk.Items.Base.Fields.Description_FieldName)</p>

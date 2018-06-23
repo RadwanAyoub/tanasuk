@@ -44,7 +44,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Configy, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Configy.1.0.0\lib\net45\Configy.dll</HintPath>
+    </Reference>
+    <Reference Include="Kamsar.WebConsole, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Kamsar.WebConsole.2.0.0\lib\net40\Kamsar.WebConsole.dll</HintPath>
+    </Reference>
+    <Reference Include="MicroCHAP, Version=1.2.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MicroCHAP.1.2.2.2\lib\net45\MicroCHAP.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Rainbow, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Core.2.0.0\lib\net452\Rainbow.dll</HintPath>
+    </Reference>
+    <Reference Include="Rainbow.Storage.Sc, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Storage.Sc.2.0.0\lib\net452\Rainbow.Storage.Sc.dll</HintPath>
+    </Reference>
+    <Reference Include="Rainbow.Storage.Yaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Rainbow.Storage.Yaml.2.0.0\lib\net452\Rainbow.Storage.Yaml.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libraries\Sitecore.Kernel.dll</HintPath>
@@ -62,6 +80,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -69,6 +90,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Unicorn, Version=4.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unicorn.Core.4.0.3\lib\net452\Unicorn.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.Web.Razor">
@@ -89,70 +113,59 @@
     <Reference Include="Microsoft.Web.Infrastructure">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
     </Reference>
-    <Reference Include="System.Web.Mvc">
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.4\lib\net45\System.Web.Mvc.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Css\addition.css" />
-    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.svg" />
-    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.svg" />
-    <Content Include="Css\Difficulty.css" />
-    <Content Include="Css\font-awesome.min.css" />
-    <Content Include="Css\niteflight.min.css" />
-    <Content Include="Css\vendor.min.css" />
-    <Content Include="Global.asax" />
-    <Content Include="Web.config" />
+    <Content Include="App_Config\Include\Tanasuk.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Business\BreadCrumbBuilder.cs" />
     <Compile Include="Business\IMedia.cs" />
     <Compile Include="Business\Navigation.cs" />
     <Compile Include="Controllers\TanasukController.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
+    <Compile Include="Items.cs" />
     <Compile Include="Models\Image.cs" />
     <Compile Include="Models\NavigationModel.cs" />
+    <Compile Include="Models\tanasukPipelinesArgs.cs" />
+    <Compile Include="Pipelines\tanasukProcess.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.eot" />
-    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.ttf" />
-    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.woff" />
-    <Content Include="Css\bower_components\bootstrap-sass\assets\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
-    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.eot" />
-    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.woff" />
-    <Content Include="Css\bower_components\font-awesome\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Css\bower_components\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config" />
+    <Content Include="App_Config\Include\Rainbow.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.AutoPublish.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Dependency.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.NewItemsOnly.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.CustomSerializationFolder.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.DataProvider.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Deployed.config.disabled" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Dilithium.config.example" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.PowerShell.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
+    <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
     <None Include="packages.config" />
-    <Content Include="Views\Adv1.cshtml" />
-    <Content Include="Views\Base\Adv1.cshtml" />
+    <Content Include="Css\css.css" />
+    <Content Include="Views\Ad1.cshtml" />
     <Content Include="Views\Base\Banner.cshtml" />
-    <Content Include="Views\Base\BaseContent.cshtml" />
-    <Content Include="Views\Base\BaseContent_.cshtml" />
+    <Content Include="Views\Base\TwoColumn.cshtml" />
+    <Content Include="Views\Base\OneColumn.cshtml" />
     <Content Include="Views\Base\BreadCrumb.cshtml" />
     <Content Include="Views\Base\Footer.cshtml" />
     <Content Include="Views\Base\Logo.cshtml" />
     <Content Include="Views\Base\MainLayout.cshtml" />
-    <Content Include="Views\Base\Top.cshtml" />
+    <Content Include="Views\Base\Header.cshtml" />
     <Content Include="Views\Content.cshtml" />
-    <Content Include="Views\Product1Service1.cshtml" />
+    <Content Include="Views\Types.cshtml" />
     <Content Include="Views\Tanasuk\Index.cshtml" />
-    <Content Include="Views\Tanasuk\Navigation.cshtml" />
-    <Content Include="Views\Tanasuk\Side.cshtml" />
+    <Content Include="Views\Tanasuk\HeaderNavigation.cshtml" />
+    <Content Include="Views\Tanasuk\SideNavigation.cshtml" />
     <Content Include="Views\web.config" />
-    <None Include="Web.Debug.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
-    <None Include="Web.Release.config">
-      <DependentUpon>Web.config</DependentUpon>
-    </None>
+    <Content Include="Views\Ad2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

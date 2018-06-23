@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc.Presentation
+@using Sitecore.Data.Items
+@{
+    var dataSourceId = RenderingContext.CurrentOrNull.Rendering.DataSource;
+    Item item = Sitecore.Context.Database.GetItem(dataSourceId);
+}
+<div class="padd">
+    <h3>
+        @Html.Sitecore().BeginField("Destination", new { haschildren = true })
+        @Html.Sitecore().Field("Title") 
+        @Html.Sitecore().EndField()
+    </h3>
+    <div class="sidebar-nav">
+        @Html.Sitecore().Field("Image")
+    </div>
+</div>

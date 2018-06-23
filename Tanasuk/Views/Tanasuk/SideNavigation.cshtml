@@ -1,0 +1,29 @@
+﻿@using Sitecore.Data.Items;
+@using Sitecore.Mvc.Presentation;
+@model List<Tanasuk.Models.NavigationModel>
+@{ 
+    Item current = RenderingContext.Current.ContextItem;
+}
+<div class="sidebar-nav">
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-collapse collapse sidebar-navbar-collapse">
+            <ul class="nav navbar-nav">
+                @foreach (var navItem in Model)
+                {
+                    <li class="vert @(navItem.Name.Name == current.Name ? "active" : string.Empty)">
+                        @Html.Sitecore().BeginField("Destination", navItem.Name, new { haschildren = false})@Html.Sitecore().EndField()
+                        @if (navItem.Children.Count > 0)
+                        {
+                            <ul class="nav navbar-nav">
+                                @foreach (var subNav in navItem.Children)
+                                {
+                                <li class="subvert @(subNav.Name.Name == current.Name ? "active" : string.Empty)">@Html.Sitecore().BeginField("Destination", subNav.Name, new { haschildren = false })@Html.Sitecore().EndField()</li>
+                                }
+                            </ul>
+                        }
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>

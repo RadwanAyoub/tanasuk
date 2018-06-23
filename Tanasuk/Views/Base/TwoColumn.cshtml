@@ -1,0 +1,26 @@
+﻿<style>
+    .sc-breadcrumb {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fff), color-stop(1, #fff));
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=0);
+        border-bottom: 0px;
+        padding: 0 1em;
+        margin-bottom: 10px;
+    }
+</style>
+<div class="container-fluid text-center">
+    <div class="row">
+        @Html.Sitecore().Placeholder("Banner")
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.Sitecore().Placeholder("Side")
+            @Html.Sitecore().Placeholder("Adv")
+        </div>
+        <div class="col-lg-9">
+            @Html.Sitecore().Placeholder("Content")
+        </div>
+    </div>
+    @Html.Sitecore().Placeholder("BreadCrumb")
+</div>

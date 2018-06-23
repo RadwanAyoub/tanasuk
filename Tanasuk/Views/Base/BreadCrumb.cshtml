@@ -9,8 +9,8 @@
     string[] home = start.Split(new[] { "/" }, StringSplitOptions.None);
     string curr = null;
 }
-<nav data-sc-id="RibbonBreadcrumb" class="sc-breadcrumb sc_RibbonBreadcrumb_410 data-sc-registered" data-bind="visible: isVisible" data-sc-require="/-/speak/v1/ribbon/Breadcrumb.js,css!/-/speak/v1/ribbon/Breadcrumb.css" data-sc-hasnested="true" id="breadcrumbContent{62F63A62-2B3A-4121-A9BD-5F6E919B8C4E}" style="background-color: #fff">
-    <div class="sc-breadcrumb-item" title="Go to home">
+<nav data-sc-id="RibbonBreadcrumb" class="sc-breadcrumb sc_RibbonBreadcrumb_410 data-sc-registered" data-bind="visible: isVisible" data-sc-require="/-/speak/v1/ribbon/Breadcrumb.js,css!/-/speak/v1/ribbon/Breadcrumb.css" data-sc-hasnested="true" id="breadcrumbContent{62F63A62-2B3A-4121-A9BD-5F6E919B8C4E}" style="background-color: #fff; float:left; margin-top:20px;">
+    <div class="sc-breadcrumb-item" title="Go to home" style="display: inline-block;">
         <a id="navigationTreeViewButton" class="sc-breadcrumb-item-button" href="@home[3]">
             <img alt="" src="/sitecore/shell/~/icon/Office/16x16/elements_tree.png.aspx">
         </a>
@@ -23,7 +23,7 @@
             tele.Url = null;
             curr = "Current";
         }
-        <div class="sc-breadcrumb-item">
+        <div class="sc-breadcrumb-item" style="display: inline-block;">
             <a id="breadcrumbMenuSubcontrol" class="sc-breadcrumb-item-action" title="@tele.Title action">
                 <img src="/sitecore/shell/client/Speak/Assets/img/Speak/Common/16x16/dark_gray/separator.png">
             </a>
