@@ -1,0 +1,21 @@
+﻿---
+ID: "fb5f597b-4d9e-4b96-ab8e-7db6606ba256"
+Parent: "7a836d3e-baf9-46e7-a71d-a27802760b37"
+Template: "ff73940c-c49a-431e-addc-a03d1a2fd8b9"
+Path: /sitecore/content/Global/Navigation/Services/Service2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T161558Z
+    - ID: "60e7bde4-4bea-4545-a1c9-aa1036252096"
+      Hint: Destination
+      Value: |
+        <link text="Service2" linktype="external" url="/Services/Service2" anchor="" target="" />
+    - ID: "e061b5fc-778c-4334-99dc-5f2b675e86f9"
+      Hint: Title
+      Value: Service2

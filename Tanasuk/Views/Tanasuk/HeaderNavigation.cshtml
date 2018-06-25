@@ -8,12 +8,10 @@
     <ul class="nav navbar-nav">
         @foreach (var child in Model)
         {
-            Sitecore.Data.Fields.LinkField linkfield = child.Name.Fields["Destination"];
-            var url = linkfield.GetFriendlyUrl();
-        <li class="@(child.Name.Name == current.Name ? "active" : string.Empty)">
-        @Html.Sitecore().BeginField("Destination", child.Name, new { haschildren = false })
-        @Html.Sitecore().EndField()
-        </li>
+            <li class="@(child.Name.Name == current.Name ? "active" : string.Empty)">
+                @Html.Sitecore().BeginField("Destination", child.Name, new { haschildren = false })
+                @Html.Sitecore().EndField()
+            </li>
         }
     </ul>
 </div>

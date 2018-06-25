@@ -1,0 +1,75 @@
+﻿---
+ID: "114c1797-0346-479c-a408-b57df62af09d"
+Parent: "5090c6f2-f2f4-4222-af96-d1467c94461b"
+Template: "5090c6f2-f2f4-4222-af96-d1467c94461b"
+Path: /sitecore/templates/User Defined/Tanasuk/Inner Page/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{197B5DDA-1A70-4CFA-B2E4-5FD4EB0E6687}">
+        <r
+          ds="{2BFA853C-85A2-4181-8BB6-5E3B9E08A005}"
+          id="{F15BF5F0-EFF8-4446-9D2F-DAF2725284DA}"
+          par=""
+          ph="Logo"
+          uid="{440C340E-DCD8-4A6F-8705-982BB2923300}" />
+        <r
+          id="{3A5A6638-40B4-4F5F-8A3A-A0060138BAF5}"
+          ph="Top"
+          uid="{782DCD34-19A8-4015-83B7-BE46E5A70C6B}" />
+        <r
+          ds="{2B4CEE9C-3100-466F-AEE5-B33957E9E554}"
+          id="{16B382E5-5A8A-48E8-A5CA-DF0FA73547DA}"
+          par=""
+          ph="Footer"
+          uid="{C7FEB387-63D2-4C4D-8B79-74BA7384A6C2}" />
+        <r
+          ds=""
+          id="{00047F4A-567B-450C-9603-BAD65273A0C2}"
+          par=""
+          ph="Banner"
+          uid="{5C4CE924-4DAE-49EC-96A1-6697DCBFC0EE}" />
+        <r
+          ds="{8B953A81-B2AB-4E82-8A50-93BD3B0C5196}"
+          id="{E0E9A23D-782B-490F-831A-EB3A0F1CE064}"
+          par=""
+          ph="Navigation"
+          uid="{44219674-B962-423B-97B3-E3D2FF1E4D53}" />
+        <r
+          ds="{8B953A81-B2AB-4E82-8A50-93BD3B0C5196}"
+          id="{F81FDE92-FEC7-44BA-95FA-5B2B236A3AA3}"
+          par=""
+          ph="Side"
+          uid="{F504657E-4FC3-4880-B69D-11B23739C22E}" />
+        <r
+          ds=""
+          id="{07F330F3-FC24-4CA8-87C8-67575820958F}"
+          par=""
+          ph="Main"
+          uid="{4FB0CE83-676D-4444-ACCC-6FBC1E566E32}" />
+        <r
+          id="{C66AB958-FFAA-4342-B997-5520EA0182E0}"
+          ph="Content"
+          uid="{F79EDD49-821C-4F80-B4C8-959FDFD60171}" />
+        <r
+          ds=""
+          id="{42EB8444-D2CD-44E6-A62E-BEE81673F77A}"
+          par=""
+          ph="BreadCrumb"
+          uid="{A7967D8F-00E3-4CF6-9A49-E4570B8D7D11}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180614T111834Z

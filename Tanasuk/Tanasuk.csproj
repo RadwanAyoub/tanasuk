@@ -63,6 +63,15 @@
     <Reference Include="Rainbow.Storage.Yaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Rainbow.Storage.Yaml.2.0.0\lib\net452\Rainbow.Storage.Yaml.dll</HintPath>
     </Reference>
+    <Reference Include="Sitecore.Forms.Core">
+      <HintPath>..\Libraries\Sitecore.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Forms.Custom">
+      <HintPath>..\Libraries\Sitecore.Forms.Custom.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.Forms.Mvc">
+      <HintPath>..\Libraries\Sitecore.Forms.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="Sitecore.Kernel, Version=10.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libraries\Sitecore.Kernel.dll</HintPath>
@@ -70,6 +79,9 @@
     <Reference Include="Sitecore.Mvc, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\Libraries\Sitecore.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="Sitecore.WFFM.Abstractions">
+      <HintPath>..\Libraries\Sitecore.WFFM.Abstractions.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -130,7 +142,9 @@
     <Compile Include="Models\NavigationModel.cs" />
     <Compile Include="Models\tanasukPipelinesArgs.cs" />
     <Compile Include="Pipelines\tanasukProcess.cs" />
+    <Compile Include="Pipelines\UploadeLimitation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveActions\ContactUsLog.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Config\Include\Unicorn\Unicorn.Configs.Default.config" />
@@ -148,8 +162,10 @@
     <Content Include="App_Config\Include\Unicorn\Unicorn.Remote.config.disabled" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.UI.config" />
     <Content Include="App_Config\Include\Unicorn\Unicorn.zSharedSecret.config.example" />
+    <Content Include="App_Config\Include\Sitecore.Forms.config" />
     <None Include="packages.config" />
     <Content Include="Css\css.css" />
+    <Content Include="title.ico" />
     <Content Include="Views\Ad1.cshtml" />
     <Content Include="Views\Base\Banner.cshtml" />
     <Content Include="Views\Base\TwoColumn.cshtml" />
@@ -166,6 +182,24 @@
     <Content Include="Views\Tanasuk\SideNavigation.cshtml" />
     <Content Include="Views\web.config" />
     <Content Include="Views\Ad2.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\CaptchaField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\CheckboxField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\CheckboxListField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\DateField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\DatePickerField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\DropListField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\FieldViewModel.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\FileUploadField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\FormViewModel.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\ListBoxField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\MultipleLineTextField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\PasswordConfirmationField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\RadioListField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\RecaptchaField.cshtml" />
+    <Content Include="Views\Form\EditorTemplates\SectionViewModel.cshtml" />
+    <Content Include="Views\Form\Index.cshtml" />
+    <Content Include="Views\Form\SuccessRedirect.cshtml" />
+    <Content Include="Views\Form\Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

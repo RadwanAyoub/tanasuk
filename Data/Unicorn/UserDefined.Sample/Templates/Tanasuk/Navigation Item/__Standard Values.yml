@@ -1,0 +1,26 @@
+﻿---
+ID: "0237a256-0698-4a73-98c6-0681438805ba"
+Parent: "ff73940c-c49a-431e-addc-a03d1a2fd8b9"
+Template: "ff73940c-c49a-431e-addc-a03d1a2fd8b9"
+Path: /sitecore/templates/User Defined/Tanasuk/Navigation Item/__Standard Values
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{FF73940C-C49A-431E-ADDC-A03D1A2FD8B9}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T161454Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "e061b5fc-778c-4334-99dc-5f2b675e86f9"
+      Hint: Title
+      Value: $name

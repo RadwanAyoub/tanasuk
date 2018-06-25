@@ -1,0 +1,17 @@
+﻿---
+ID: "c9197b59-48c8-41f6-a665-201c4c638ab4"
+Parent: "6620f0f6-d0b3-4d99-8957-ff3c28d95da7"
+Template: "e28b2ec8-9d5b-4466-998b-7092c56f0a5c"
+Path: /sitecore/content/Global/Product Types/Hardware
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "165e8614-8cfe-4182-b645-95797d9d900c"
+      Hint: Name
+      Value: Hardware
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T161615Z

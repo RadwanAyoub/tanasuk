@@ -52,8 +52,9 @@
     max-width: 100%;
     height: auto;
 }
-footer{
+footer {
     margin-top: 20px;
+    position: fixed;
 }
 @media (min-width: 768px) {
     .navbar {

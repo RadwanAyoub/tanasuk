@@ -4,6 +4,7 @@
     <title>@Html.Sitecore().Field("Title")</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="~/title.ico" type="image/png">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/Css/css.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -12,11 +13,13 @@
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
-           @Html.Sitecore().Placeholder("Top")
+            @Html.Sitecore().Placeholder("Top")
         </div>
     </nav>
     @Html.Sitecore().Placeholder("Main")
+    <div style="margin-left:150px;margin-right:150px;">
     @Html.Sitecore().Placeholder("Form")
+    </div>
     <footer class="container-fluid text-center">
         @Html.Sitecore().Placeholder("Footer")
     </footer>

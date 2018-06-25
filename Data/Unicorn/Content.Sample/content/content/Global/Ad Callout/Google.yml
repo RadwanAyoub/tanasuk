@@ -1,0 +1,29 @@
+﻿---
+ID: "250c3278-42e0-4028-9593-42546a75ac90"
+Parent: "7efc4fe8-8f9f-4346-b4a3-80983003b437"
+Template: "4fd311c2-74ec-4e17-a577-72eb7a707432"
+Path: /sitecore/content/Global/Ad Callout/Google
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1a22f168-fde6-40fa-83cc-49ac659998b6"
+      Hint: Destination
+      Value: |
+        <link text="Google" linktype="external" url="http://www.google.com" anchor="" target="" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T161402Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "6b24c6b7-194d-4b37-8c4c-edf4cf82ef5d"
+      Hint: Image
+      Value: |
+        <image mediaid="{15A2E60C-11DD-4EC5-A017-057ED9AD7D1A}" ></image>
+    - ID: "7305eb4e-ea11-43e9-beda-f4efac4d1ecf"
+      Hint: Title
+      Value: Google

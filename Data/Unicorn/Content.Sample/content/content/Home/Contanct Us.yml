@@ -1,0 +1,71 @@
+﻿---
+ID: "4306bddd-893a-4d9a-9937-c6dbe0701a5b"
+Parent: "2bfa853c-85a2-4181-8bb6-5e3b9e08a005"
+Template: "4c4e91ab-f1e2-4fae-8f2a-e53c41a562d4"
+Path: /sitecore/content/Home/Contanct Us
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{197B5DDA-1A70-4CFA-B2E4-5FD4EB0E6687}">
+        <r
+          ds="{8E87DB10-3C10-4C55-9E88-B87D227FB3BC}"
+          id="{F15BF5F0-EFF8-4446-9D2F-DAF2725284DA}"
+          par=""
+          ph="Logo"
+          uid="{440C340E-DCD8-4A6F-8705-982BB2923300}" />
+        <r
+          id="{3A5A6638-40B4-4F5F-8A3A-A0060138BAF5}"
+          ph="Top"
+          uid="{782DCD34-19A8-4015-83B7-BE46E5A70C6B}" />
+        <r
+          ds="{2B4CEE9C-3100-466F-AEE5-B33957E9E554}"
+          id="{16B382E5-5A8A-48E8-A5CA-DF0FA73547DA}"
+          par=""
+          ph="Footer"
+          uid="{C7FEB387-63D2-4C4D-8B79-74BA7384A6C2}" />
+        <r
+          ds=""
+          id="{00047F4A-567B-450C-9603-BAD65273A0C2}"
+          par=""
+          ph="Banner"
+          uid="{5C4CE924-4DAE-49EC-96A1-6697DCBFC0EE}" />
+        <r
+          ds="{8B953A81-B2AB-4E82-8A50-93BD3B0C5196}"
+          id="{E0E9A23D-782B-490F-831A-EB3A0F1CE064}"
+          par=""
+          ph="Navigation"
+          uid="{44219674-B962-423B-97B3-E3D2FF1E4D53}" />
+        <r
+          ds="{8B953A81-B2AB-4E82-8A50-93BD3B0C5196}"
+          id="{F81FDE92-FEC7-44BA-95FA-5B2B236A3AA3}"
+          par=""
+          ph="Side"
+          uid="{89A0A885-5CDE-471C-ADD0-C84175FB257F}" />
+        <r
+          id="{42EB8444-D2CD-44E6-A62E-BEE81673F77A}"
+          ph="BreadCrumb"
+          uid="{6E064B1F-0AFF-49C2-9053-C94F7A65768D}" />
+        <r
+          uid="{E08882AD-D901-4012-85EB-871AD780229F}"
+          ds="{12441630-2D0C-4FE9-B918-7F62603E2123}"
+          id="{F2CCA16D-7524-4E99-8EE0-78FF6394A3B3}"
+          ph="Form" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180621T135918Z
+    - ID: "3093d42e-4e43-4816-a055-5b50212235f4"
+      Hint: Title
+      Value: Contanct Us

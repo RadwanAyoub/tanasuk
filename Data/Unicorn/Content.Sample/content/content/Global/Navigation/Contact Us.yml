@@ -1,0 +1,25 @@
+﻿---
+ID: "a62fadb2-76cf-4edf-994e-6c872331233c"
+Parent: "8b953a81-b2ab-4e82-8a50-93bd3b0c5196"
+Template: "ff73940c-c49a-431e-addc-a03d1a2fd8b9"
+Path: /sitecore/content/Global/Navigation/Contact Us
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180621T144217Z
+    - ID: "60e7bde4-4bea-4545-a1c9-aa1036252096"
+      Hint: Destination
+      Value: |
+        <link text="Contact Us" linktype="external" url="/Contanct-Us" anchor="" target="" />
+    - ID: "e061b5fc-778c-4334-99dc-5f2b675e86f9"
+      Hint: Title
+      Value: Contact Us

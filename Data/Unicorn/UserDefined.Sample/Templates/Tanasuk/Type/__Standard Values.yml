@@ -1,0 +1,21 @@
+﻿---
+ID: "e5abe103-f3da-47a0-a96c-806c8809ea04"
+Parent: "e28b2ec8-9d5b-4466-998b-7092c56f0a5c"
+Template: "e28b2ec8-9d5b-4466-998b-7092c56f0a5c"
+Path: /sitecore/templates/User Defined/Tanasuk/Type/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "165e8614-8cfe-4182-b645-95797d9d900c"
+      Hint: Name
+      Value: $name
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T153904Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

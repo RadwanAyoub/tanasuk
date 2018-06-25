@@ -1,0 +1,36 @@
+﻿---
+ID: "6c9b0225-a74e-4fea-b624-7af4bf803e36"
+Parent: "0850e25e-3316-4190-a60a-f999ef379572"
+Template: "5090c6f2-f2f4-4222-af96-d1467c94461b"
+Path: /sitecore/content/Home/Products/Product2
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "20dc8cfd-4577-4d03-9da8-7fb01e1e58c4"
+      Hint: Thumbnail
+      Value: |
+        <image mediaid="{15A2E60C-11DD-4EC5-A017-057ED9AD7D1A}" />
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T155148Z
+    - ID: "3093d42e-4e43-4816-a055-5b50212235f4"
+      Hint: Title
+      Value: Product2
+    - ID: "5e9c826e-d0a9-4f16-a82b-3c97d6f1068e"
+      Hint: Link
+      Value: |
+        <link text="More Details" linktype="external" url="/Products/Product2" anchor="" target="" />
+    - ID: "784a0f02-a048-4197-9a14-52dacd48ecd1"
+      Hint: Banner
+      Value: |
+        <image mediaid="{84C553AB-388A-47FA-975E-D8B4D0FB7274}" />
+    - ID: "93a8344a-7489-43c7-acf1-60b57eb7133c"
+      Hint: Description
+      Value: |
+        <h3 style="color: #333333; background-color: #ffffff; margin-top: 20px; margin-bottom: 10px;">The standard Lorem Ipsum passage, used since the 1500s</h3>
+        <p style="color: #333333; background-color: #ffffff; margin: 0px 0px 10px;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <h3 style="color: #333333; background-color: #ffffff; margin-top: 20px; margin-bottom: 10px;">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC</h3>
+        <p style="color: #333333; background-color: #ffffff; margin: 0px 0px 10px;">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>

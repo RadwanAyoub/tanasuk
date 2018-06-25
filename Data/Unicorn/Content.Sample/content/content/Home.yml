@@ -1,0 +1,93 @@
+﻿---
+ID: "2bfa853c-85a2-4181-8bb6-5e3b9e08a005"
+Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450"
+Template: "a2e25ca1-12b0-4416-97c4-c72fe7bd9034"
+Path: /sitecore/content/Home
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{197B5DDA-1A70-4CFA-B2E4-5FD4EB0E6687}">
+        <r
+          id="{0A57ED25-BDE8-408B-8BE9-4AA0E2DE8A51}"
+          ph="/Main/Content"
+          uid="{D48BAD42-1BA5-4A20-A22E-20424D8D6820}" />
+        <r
+          id="{AD580A01-2704-4CDD-AA15-E419125D6145}"
+          ph="Main"
+          uid="{711093F6-3F66-4752-B859-2EBFF733092C}" />
+        <r
+          id="{42EB8444-D2CD-44E6-A62E-BEE81673F77A}"
+          ph="BreadCrumb"
+          uid="{CCD6499D-E6EF-4D14-BB01-BCC22768A553}" />
+        <r
+          id="{AD580A01-2704-4CDD-AA15-E419125D6145}"
+          ph="BaseContent"
+          uid="{070B2E5B-C57B-4C22-BB76-1D796A3DC6C4}" />
+        <r
+          id="{0A57ED25-BDE8-408B-8BE9-4AA0E2DE8A51}"
+          ph="/BaseContent/Content"
+          uid="{2F29FC26-27F4-4402-9559-F7E26A087EFE}" />
+        <r
+          ds="{2BFA853C-85A2-4181-8BB6-5E3B9E08A005}"
+          id="{F15BF5F0-EFF8-4446-9D2F-DAF2725284DA}"
+          par=""
+          ph="Logo"
+          uid="{440C340E-DCD8-4A6F-8705-982BB2923300}" />
+        <r
+          id="{3A5A6638-40B4-4F5F-8A3A-A0060138BAF5}"
+          ph="Top"
+          uid="{782DCD34-19A8-4015-83B7-BE46E5A70C6B}" />
+        <r
+          ds="{2BFA853C-85A2-4181-8BB6-5E3B9E08A005}"
+          id="{16B382E5-5A8A-48E8-A5CA-DF0FA73547DA}"
+          par=""
+          ph="Footer"
+          uid="{C7FEB387-63D2-4C4D-8B79-74BA7384A6C2}" />
+        <r
+          ds=""
+          id="{00047F4A-567B-450C-9603-BAD65273A0C2}"
+          par=""
+          ph="Banner"
+          uid="{5C4CE924-4DAE-49EC-96A1-6697DCBFC0EE}" />
+        <r
+          ds="{8B953A81-B2AB-4E82-8A50-93BD3B0C5196}"
+          id="{E0E9A23D-782B-490F-831A-EB3A0F1CE064}"
+          par=""
+          ph="Navigation"
+          uid="{44219674-B962-423B-97B3-E3D2FF1E4D53}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T155049Z
+    - ID: "2b4cee9c-3100-466f-aee5-b33957e9e554"
+      Hint: CopyRights
+      Value: Copyrights &copy; 2018 Tanasuk
+    - ID: "3093d42e-4e43-4816-a055-5b50212235f4"
+      Hint: Title
+      Value: Home
+    - ID: "784a0f02-a048-4197-9a14-52dacd48ecd1"
+      Hint: Banner
+      Value: |
+        <image mediaid="{1BCF0D42-A427-4B03-928A-7B09861730B3}" />
+    - ID: "93a8344a-7489-43c7-acf1-60b57eb7133c"
+      Hint: Description
+      Value: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    - ID: "9c291dfe-207f-47d5-9b15-cd7493479802"
+      Hint: Title
+      Value: Home
+    - ID: "d728efd2-8f40-4476-bcc1-04ce9d159a03"
+      Hint: IncludeInNavigation
+      Type: Checkbox
+      Value: 1

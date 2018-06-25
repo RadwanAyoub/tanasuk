@@ -1,0 +1,17 @@
+﻿---
+ID: "d7d2eeb1-bb4d-4a63-9601-b444bcd7b646"
+Parent: "a2855db7-1a9b-4be6-9774-eb2bf67db641"
+Template: "e28b2ec8-9d5b-4466-998b-7092c56f0a5c"
+Path: /sitecore/content/Global/Service Types/Outsourcing
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "165e8614-8cfe-4182-b645-95797d9d900c"
+      Hint: Name
+      Value: Outsourcing
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180613T174352Z

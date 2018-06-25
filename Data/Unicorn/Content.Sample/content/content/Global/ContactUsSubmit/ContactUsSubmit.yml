@@ -1,0 +1,36 @@
+﻿---
+ID: "c593fe50-b0fa-4397-8920-97314e26c26a"
+Parent: "5203213c-8aa9-4e1f-99b9-afdfdd5f372f"
+Template: "e8166311-a477-4dbb-b8ff-6ea671f2d9e8"
+Path: /sitecore/content/Global/ContactUsSubmit/ContactUsSubmit
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "2215ccae-1f14-4290-9c9a-a049dace106c"
+      Hint: Subject
+      Value: Sub
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20180624T141543Z
+    - ID: "33f94af4-745c-4cf3-b486-528171ece0c2"
+      Hint: First Name
+      Value: Radwan
+    - ID: "40421504-99a0-43dc-bde7-e0dc4fa806f7"
+      Hint: Date
+      Value: 20180624T170200
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "77b8213d-1cb3-4d29-9ff9-91e6845569af"
+      Hint: Email
+      Value: radwan_a_abusiam@outlook.com
+    - ID: "afbe60c4-bd23-4be5-af28-4fb01694b09f"
+      Hint: Message
+      Value: Hello
+    - ID: "cfab25f9-8e56-4d8d-bcf2-686ea51cd9c5"
+      Hint: Last Name
+      Value: Ayoub
